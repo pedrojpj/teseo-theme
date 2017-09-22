@@ -6,10 +6,12 @@
    "scripts": {
       "build": "npm run build:sass && npm run build:postcss",
       "build:postcss": "postcss dist/*.css -d dist/",
-      "build:sass": "node-sass --include:path scss src/theme.scss dist/teseo-theme.css",
+      "build:sass":
+         "node-sass --include:path scss src/theme.scss dist/teseo-theme.css",
       "lint": "sass-lint 'src/**/*.scss' -v -q",
       "test": "yarn lint",
-      "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+      "semantic-release":
+         "semantic-release pre && npm publish && semantic-release post"
    },
    "sasslintConfig": "sass-lint.yml",
    "repository": {
@@ -39,6 +41,6 @@
       }
    },
    "dependencies": {
-      "sanitize.css": "^5.0.0"
+      "sanitize.css": "5.0.0"
    }
 }
