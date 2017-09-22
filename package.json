@@ -1,5 +1,5 @@
 {
-   "name": "egeo-theme",
+   "name": "teseo-theme",
    "version": "0.0.0-development",
    "description": "",
    "main": "index.js",
@@ -7,7 +7,7 @@
       "build": "npm run build:sass && npm run build:postcss",
       "build:postcss": "postcss dist/*.css -d dist/",
       "build:sass":
-         "node-sass --include:path scss src/theme.scss dist/egeo-theme.css",
+         "node-sass --include:path scss src/theme.scss dist/teseo-theme.css",
       "lint": "sass-lint 'src/**/*.scss' -v -q",
       "test": "yarn lint",
       "semantic-release":
@@ -16,14 +16,14 @@
    "sasslintConfig": "sass-lint.yml",
    "repository": {
       "type": "git",
-      "url": "https://github.com/pjpenast/egeo-theme.git"
+      "url": "https://github.com/pjpenast/teseo-theme.git"
    },
    "author": "",
    "license": "ISC",
    "bugs": {
-      "url": "https://github.com/pjpenast/egeo-theme/issues"
+      "url": "https://github.com/pjpenast/teseo-theme/issues"
    },
-   "homepage": "https://github.com/pjpenast/egeo-theme#readme",
+   "homepage": "https://github.com/pjpenast/teseo-theme#readme",
    "devDependencies": {
       "cssnano": "3.10.0",
       "node-sass": "4.5.3",
