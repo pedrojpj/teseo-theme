@@ -1,8 +1,8 @@
 // Regular
 @font-face {
    font-family: 'Nunito Sans';
-   src: url($egeo-fontface-src + '/nunito-sans/NunitoSans-Regular.eot');
-   src: url($egeo-fontface-src + '/nunito-sans/NunitoSans-Regular.eot?#iefix')
+   src: url($egeo-fontface-src + '/nunito-sans/NunitoSans-Regular.eot'),
+      url($egeo-fontface-src + '/nunito-sans/NunitoSans-Regular.eot?#iefix')
          format('embedded-opentype'),
       url($egeo-fontface-src + '/nunito-sans/NunitoSans-Regular.woff')
          format('woff'),
@@ -54,7 +54,6 @@
       url($egeo-fontface-src + '/nunito-sans/NunitoSans-LightItalic.svg')
          format('svg');
 }
-
 // Semibold
 @font-face {
    font-family: 'Nunito Sans SemiBold';
@@ -68,7 +67,6 @@
       url($egeo-fontface-src + '/nunito-sans/NunitoSans-SemiBold.svg')
          format('svg');
 }
-
 // Semibold Italic
 @font-face {
    font-family: 'Nunito Sans SemiBold Italic';
@@ -83,7 +81,6 @@
       url($egeo-fontface-src + '/nunito-sans/NunitoSans-SemiBoldItalic.svg')
          format('svg');
 }
-
 // Bold
 @font-face {
    font-family: 'Nunito Sans Bold';
@@ -96,7 +93,6 @@
          format('truetype'),
       url($egeo-fontface-src + '/nunito-sans/NunitoSans-Bold.svg') format('svg');
 }
-
 // Bold Italic
 @font-face {
    font-family: 'Nunito Sans Bold Italic';
@@ -110,7 +106,6 @@
       url($egeo-fontface-src + '/nunito-sans/NunitoSans-BoldItalic.svg')
          format('svg');
 }
-
 // Extra Bold
 @font-face {
    font-family: 'Nunito Sans ExtraBold';
@@ -124,7 +119,6 @@
       url($egeo-fontface-src + '/nunito-sans/NunitoSans-ExtraBold.svg')
          format('svg');
 }
-
 // Extra Bold Italic
 @font-face {
    font-family: 'Nunito Sans ExtraBold Italic';
