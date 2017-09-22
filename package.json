@@ -11,7 +11,8 @@
       "lint": "sass-lint 'src/**/*.scss' -v -q",
       "test": "yarn lint",
       "semantic-release":
-         "semantic-release pre && npm publish && semantic-release post"
+         "semantic-release pre && npm publish && semantic-release post",
+      "prepublish": "yarn build"
    },
    "sasslintConfig": "sass-lint.yml",
    "repository": {
