@@ -18,6 +18,8 @@
 
 // sass-lint:disable indentation, no-duplicate-properties, no-vendor-prefixes, class-name-format, leading-zero, no-color-literals
 
+$egeo-fontface-src: './resources';
+
 @font-face {
    font-family: 'ico_stratio';
    src: url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.eot');

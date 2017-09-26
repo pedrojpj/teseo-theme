@@ -4,15 +4,16 @@
    "description": "",
    "main": "index.js",
    "scripts": {
-      "build": "npm run build:sass && npm run build:postcss",
+      "build": "npm run clean:dist && npm run build:sass && npm run build:postcss && npm run copy-fonts && npm run clean:dist:sass",
       "build:postcss": "postcss dist/*.css -d dist/",
-      "build:sass":
-         "node-sass --include:path scss src/theme.scss dist/teseo-theme.css",
+      "build:sass": "node-sass --include:path scss src/theme.scss dist/teseo-theme.css",
       "lint": "sass-lint 'src/**/*.scss' -v -q",
       "test": "yarn lint",
-      "semantic-release":
-         "semantic-release pre && npm publish && semantic-release post",
-      "prepublish": "yarn build"
+      "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+      "prepublish": "yarn build",
+      "copy-fonts": "node ./bin/copyFonts.js",
+      "clean:dist": "rimraf dist",
+      "clean:dist:sass": "rimraf dist/*.scss"
    },
    "sasslintConfig": "sass-lint.yml",
    "repository": {
@@ -28,11 +29,13 @@
    "devDependencies": {
       "cssnano": "3.10.0",
       "cz-conventional-changelog": "2.0.0",
+      "fs-extra": "^4.0.2",
       "node-sass": "4.5.3",
       "postcss": "6.0.11",
       "postcss-cli": "4.1.1",
       "postcss-cssnext": "3.0.2",
       "postcss-import": "11.0.0",
+      "rimraf": "^2.6.2",
       "sass-lint": "1.11.1",
       "semantic-release": "8.0.3"
    },
