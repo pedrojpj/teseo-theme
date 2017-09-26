@@ -1,3 +1,5 @@
+$egeo-fontface-src: './resources';
+
 // Regular
 @font-face {
    font-family: 'Nunito Sans';
@@ -16,7 +18,8 @@
 @font-face {
    font-family: 'Nunito Sans Italic';
    src: url($egeo-fontface-src + '/nunito-sans/NunitoSans-Italic.eot');
-   src: url($egeo-fontface-src + '/nunito-sans/NunitoSans-Italic.eot?#iefix')
+   src: url($egeo-fontface-src + '/nunito-sans/NunitoSans-Italic.eot'),
+      url($egeo-fontface-src + '/nunito-sans/NunitoSans-Italic.eot?#iefix')
          format('embedded-opentype'),
       url($egeo-fontface-src + '/nunito-sans/NunitoSans-Italic.woff')
          format('woff'),
